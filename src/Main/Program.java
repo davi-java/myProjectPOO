@@ -7,8 +7,8 @@ import java.util.Date;
 public class Program {
     public static void main(String[] args) {
         Endereco endereco = new Endereco("13 de maio","692","Centro","Nioaque","MS");
-        Medico medico = new Medico("Daniel",endereco,new Date(),"123321","Cardiologista");
-        Paciente paciente = new Paciente("Davi",endereco,new Date(),"04158518156");
+        Medico medico = new Medico("Daniel",endereco,"25/04/1991","123321","Cardiologista");
+        Paciente paciente = new Paciente("Davi",endereco,"25/04/1991","04158518156");
         Consultorio consultorio = new Consultorio("ConsulSaude",endereco,"perto da praça");
 
 
@@ -19,9 +19,9 @@ public class Program {
 
         Prontuario prontuario = new Prontuario("Bronquite","Bronquite leve");
 
-        Consulta consulta = new Consulta(new Date(),consultorio,medico,paciente,"Agendada");
+        //Consulta consulta = new Consulta("12/02/2022",medico,paciente);
 
-        System.out.println(consulta);
+        //System.out.println(consulta);
 
     }
 }

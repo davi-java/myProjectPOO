@@ -1,11 +1,9 @@
 package entities;
 
-import java.util.Date;
-
 public class Paciente extends Entidade {
     private String CPF;
 
-    public Paciente(String nome, Endereco endereco, Date dataNascimento, String CPF) {
+    public Paciente(String nome, Endereco endereco, String dataNascimento, String CPF) {
         super(nome, endereco, dataNascimento);
         this.CPF = CPF;
     }

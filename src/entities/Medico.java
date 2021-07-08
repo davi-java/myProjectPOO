@@ -6,7 +6,7 @@ public class Medico extends Entidade{
     private String CRM;
     private String especialidade;
 
-    public Medico(String nome, Endereco endereco, Date dataNascimento, String CRM, String especialidade) {
+    public Medico(String nome, Endereco endereco, String dataNascimento, String CRM, String especialidade) {
         super(nome, endereco, dataNascimento);
         this.CRM = CRM;
         this.especialidade = especialidade;

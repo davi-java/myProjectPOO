@@ -1,10 +1,11 @@
 package entities;
 
 import java.util.Date;
+import Exception.ConsultaException;
 
 public class Consulta {
 
-    private Date data;
+    private String data;
     private Consultorio consultorio;
     private Medico medico;
     private Paciente paciente;
@@ -12,19 +13,21 @@ public class Consulta {
     private Receita receita;
     private String status;
 
-    public Consulta(Date data, Consultorio consultorio, Medico medico, Paciente paciente, String status) {
+    public Consulta(String data,Medico medico, Paciente paciente) throws ConsultaException {
+        if (data.equals("")){
+            throw new ConsultaException("Data Invalida");
+        }
         this.data = data;
-        this.consultorio = consultorio;
         this.medico = medico;
         this.paciente = paciente;
-        this.status = status;
+        this.status = "Agendada";
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 

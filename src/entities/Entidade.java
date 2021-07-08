@@ -6,9 +6,9 @@ public class Entidade {
 
     private String nome;
     private Endereco endereco;
-    private Date dataNascimento;
+    private String dataNascimento;
 
-    public Entidade(String nome, Endereco endereco, Date dataNascimento) {
+    public Entidade(String nome, Endereco endereco, String dataNascimento) {
         this.nome = nome;
         this.endereco = endereco;
         this.dataNascimento = dataNascimento;
@@ -30,11 +30,11 @@ public class Entidade {
         this.endereco = endereco;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
